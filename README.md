@@ -20,15 +20,14 @@ Método Gauss-Seidel e Método Newton-Raphson**
 - Entrada/Saída via arquivos Excel
 
 ## 📂 Estrutura do Projeto
-fluxo_de_potencia/
-- gauss_seidel/      # Implementação do método GS
-- newton_raphson/    # Implementação do método NR
-- dados_excel/   # Arquivos de entrada
-
-  - Matriz Admitância.xlsx
-  - Barras.xlsx
-  - impedância.xlsx
-- README/            # README do projeto  
+- fluxo_de_potencia/
+    - gauss_seidel/      # Implementação do método GS
+    - newton_raphson/    # Implementação do método NR
+    - dados_excel/   # Arquivos de entrada
+      - Matriz Admitância.xlsx
+      - Barras.xlsx
+      - impedância.xlsx
+    - README/            # README do projeto  
 
 ## 🔧 Requisitos & Instalação
 - bash
