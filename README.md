@@ -2,8 +2,8 @@
 # Análise de Sistenas de Potência (Gauss-Seidel & Newton-Raphson)
 
 ## 🌟 Visão Geral
-Projeto acadêmico desenvolvido para a disciplina Sistemas de Potência, implementando dois métodos numéricos para cálculo de fluxo de carga:
-Método Gauss-Seidel e Método Newton-Raphson
+**Projeto acadêmico desenvolvido para a disciplina Sistemas de Potência, implementando dois métodos numéricos para cálculo de fluxo de carga:
+Método Gauss-Seidel e Método Newton-Raphson**
 
 ## 👥 Autores
 - ```atenilton Santos de Souza Júnior```
@@ -25,11 +25,10 @@ fluxo_de_potencia/
   - Matriz Admitância.xlsx
   - Barras.xlsx
   - impedância.xlsx
-
-README/            # README do projeto  
+- README/            # README do projeto  
 
 ## 🔧 Requisitos & Instalação
-**bash**
+- bash
 - git clone https://github.com/ateniltonjr/fluxo_de_potencia.git
 - cd fluxo_de_potencia
 - pip install -r requirements.txt
