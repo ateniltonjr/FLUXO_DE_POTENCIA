@@ -1,49 +1,45 @@
 ![alt text](logo_ufob.png)
-# Power Flow Solver (Gauss-Seidel & Newton-Raphson)
+# Análise de Sistenas de Potência (Gauss-Seidel & Newton-Raphson)
 
 ## 🌟 Visão Geral
 Projeto acadêmico desenvolvido para a disciplina Sistemas de Potência, implementando dois métodos numéricos para cálculo de fluxo de carga:
-
-Método Gauss-Seidel (implementado)
-
-Método Newton-Raphson (implementado)
+Método Gauss-Seidel e Método Newton-Raphson
 
 ## 👥 Autores
-[atenilton Santos de Souza Júnior](#)
-
-[GUSTAVO HENRIQUE DA HORTA LEAO PEREIRA](#)
+- ````atenilton Santos de Souza Júnior```
+- ```Gustavo Henrique daHorta Leão Pereira```
 
 ## 🚀 Funcionalidades
-Cálculo de tensões nas barras (PU e ângulo)
-
-Fluxos de potência ativa e reativa
-
-Cálculo de perdas nas linhas
-
-Visualização de resultados
-
-Entrada/Saída via arquivos Excel
+- Cálculo de tensões nas barras (PU e ângulo)
+- Fluxos de potência ativa e reativa
+- Cálculo de perdas nas linhas
+- Visualização de resultados
+- Entrada/Saída via arquivos Excel
 
 ## 📂 Estrutura do Projeto
-SEP/
+fluxo_de_potencia/
 
-    gauss_seidel/      # Implementação do método GS
+gauss_seidel/      # Implementação do método GS
 
-    newton_raphson/    # Implementação do método NR
+newton_raphson/    # Implementação do método NR
 
-    README/            # README do projeto  
+dados_excel/   # Arquivos de entrada
+
+- Matriz Admitância.xlsx
+- Barras.xlsx
+- impedância.xlsx
+
+README/            # README do projeto  
 
 ## 🔧 Requisitos & Instalação
-bash
+**bash**
 
-git clone https://github.com/ateniltonjr/SEP.git
+git clone https://github.com/ateniltonjr/fluxo_de_potencia.git
 
-cd SEP
+cd fluxo_de_potencia
 
 pip install -r requirements.txt
 
 📊 Como Usar
-
-Prepare os arquivos de entrada na pasta data/
-
-Execute o método desejado:
+- Prepare os arquivos de entrada na pasta dados_excel/
+- Execute o método desejado:

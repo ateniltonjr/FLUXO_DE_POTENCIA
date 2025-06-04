@@ -12,7 +12,7 @@ Clone o repositório:
 
 bash
 
-git clone https://github.com/ateniltonjr/SEP.git
+git clone https://github.com/ateniltonjr/fluxo_de_potencia.git
 
 cd powerflow-solver
 
@@ -33,15 +33,7 @@ bash
 pip install -r requirements.txt
 
 ## 🏗 Estrutura do Projeto
-powerflow_solver/
-
-data/   # Arquivos de entrada
-
-    Matriz Admitância.xlsx
-
-    Barras.xlsx
-
-    impedância.xlsx
+metodo_gauss_seidel/
 
 lib/                      # Módulos do projeto
     __init__.py
@@ -85,28 +77,22 @@ python main.py
 ## 🧪 Exemplo de Saída
 ### Tensões nas barras:
 
-Barra 1: 1.000+0.000j pu | 1.000 pu ∠ 0.000°
-
-Barra 2: 0.982-0.035j pu | 0.983 pu ∠ -2.050°
-
-...
+- Barra 1: 1.000+0.000j pu | 1.000 pu ∠ 0.000°
+- Barra 2: 0.982-0.035j pu | 0.983 pu ∠ -2.050°
+- ...
 
 ### Fluxos nas linhas:
 
-Linha 1-2: P = 125.32 MW | Q = 45.67 MVar
-
-...
+- Linha 1-2: P = 125.32 MW | Q = 45.67 MVar
+- ...
 
 ### Perdas totais:
 
-P = 5.4321 MW
-
-Q = 12.8765 MVar
+- P = 5.4321 MW
+- Q = 12.8765 MVar
 
 ## 🛠 Melhorias Futuras
 
-Interface gráfica para entrada de dados
-
-Visualização da rede elétrica
-
-Exportação de relatórios em PDF
+- Interface gráfica para entrada de dados
+- Visualização da rede elétrica
+- Exportação de relatórios em PDF

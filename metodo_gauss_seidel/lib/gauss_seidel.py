@@ -4,7 +4,7 @@ from .utils import str_to_complex
 def solve_power_flow(matriz_admt, tipo_barras, impedancias, erro_max=1e-6, K_max=1000):
     """Resolve o fluxo de carga pelo método Gauss-Seidel"""
     contador = 0
-    erro = 1
+    erro = 0.0001
     
     # Preparação dos vetores
     vetor_tensao = [str_to_complex(val) for val in tipo_barras["VOLTAGE MAGNITUDE"]]

@@ -14,7 +14,7 @@ def format_complex(z):
     """Formata número complexo para impressão"""
     return f"{z.real:.3f}{'+' if z.imag >= 0 else ''}{z.imag:.3f}j"
 
-def print_matrix(matrix, name="Matriz"):
+def print_matrix(matrix, name="Matriz"): 
     """Imprime matriz formatada"""
     print(f"\n{name.upper()}:")
     print("Barra\t" + "\t".join([f"{col+1}" for col in range(matrix.shape[1])]))
