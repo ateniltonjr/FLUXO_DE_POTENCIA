@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="logo_ufob.png" alt="Logo UFOB">
+    <img src="logo_ufob.png" alt="Logo UFOB" width="180">
 </p>
 # Análise de Sistenas de Potência (Gauss-Seidel & Newton-Raphson)
 
