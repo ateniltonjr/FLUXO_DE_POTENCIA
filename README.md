@@ -6,7 +6,7 @@ Projeto acadêmico desenvolvido para a disciplina Sistemas de Potência, impleme
 Método Gauss-Seidel e Método Newton-Raphson
 
 ## 👥 Autores
-- ````atenilton Santos de Souza Júnior```
+- ```atenilton Santos de Souza Júnior```
 - ```Gustavo Henrique daHorta Leão Pereira```
 
 ## 🚀 Funcionalidades
