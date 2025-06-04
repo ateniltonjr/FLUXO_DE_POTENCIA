@@ -2,7 +2,7 @@
     <img src="logo_ufob.png" alt="Logo UFOB" width="180">
 </p>
 
-# Análise de Sistenas de Potência (Gauss-Seidel & Newton-Raphson)
+# Análise de Sistemas de Potência (Gauss-Seidel & Newton-Raphson)
 
 ## 🌟 Visão Geral
 **Projeto acadêmico desenvolvido para a disciplina Sistemas de Potência, implementando dois métodos numéricos para cálculo de fluxo de carga:
