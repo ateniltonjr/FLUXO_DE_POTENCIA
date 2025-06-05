@@ -8,8 +8,8 @@ def load_admittance_matrix(filepath):  # Define função para carregar matriz de
         for i in range(matriz.shape[0]):  # Itera sobre as linhas da matriz
             for j in range(matriz.shape[1]):  # Itera sobre as colunas da matriz
                 matriz.iloc[i, j] = str_to_complex(matriz.iloc[i, j])  # Converte cada elemento para número complexo
-        print(f"Dimensões da matriz: {matriz.shape}")  # Exibe as dimensões da matriz
-        print_matrix(matriz, "Matriz de Admitância")  # Imprime a matriz formatada
+        #print(f"Dimensões da matriz: {matriz.shape}")  # Exibe as dimensões da matriz
+        #print_matrix(matriz, "Matriz de Admitância")  # Imprime a matriz formatada
         return matriz  # Retorna a matriz carregada
     except Exception as e:  # Captura exceções
         raise Exception(f"Erro ao carregar matriz de admitância: {e}")  # Lança exceção personalizada

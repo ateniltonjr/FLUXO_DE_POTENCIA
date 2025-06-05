@@ -53,8 +53,9 @@ def load_impedance_data(filepath):  # Define função para carregar dados de imp
 
 from power_calculations import calculate_power_flows # Importa função de cálculo de fluxo de potência
 
-def newton_raphson_power_flow(Ybus, bus_data, max_iter=20, tol=1e-6):
+def newton_raphson_power_flow(Ybus, bus_data, max_iter=30, tol=1e-6, damping=1.0):
     n = len(bus_data) # Número de barras
+    # Inicialização correta do vetor de tensão
     V = np.array([float(v) for v in bus_data["VOLTAGE MAGNITUDE"]]) # Vetor de módulos de tensão
     theta = np.zeros(n) # Vetor de ângulos de tensão inicializados em zero
     P = (bus_data["GENERATOR (MW)"] - bus_data["LOAD (MW)"]).values / 100 # Vetor de potências ativas líquidas (pu)
@@ -108,8 +109,11 @@ def newton_raphson_power_flow(Ybus, bus_data, max_iter=20, tol=1e-6):
                 else:
                     J[n_theta + i, n_theta + j] = V[idx_i]*(Ybus.iloc[idx_i, idx_j].real*np.sin(theta[idx_i]-theta[idx_j]) - Ybus.iloc[idx_i, idx_j].imag*np.cos(theta[idx_i]-theta[idx_j])) # Derivada fora da diagonal
         dx = np.linalg.solve(J, mismatch) # Resolve sistema linear
-        theta[var_theta] += dx[:n_theta] # Atualiza ângulos
-        V[var_V] += dx[n_theta:] # Atualiza módulos
+        # Fator de relaxação para evitar saltos grandes
+        theta[var_theta] += damping * dx[:n_theta] # Atualiza ângulos
+        V[var_V] += damping * dx[n_theta:] # Atualiza módulos
+        # Limita as tensões PQ para o intervalo físico
+        V[var_V] = np.clip(V[var_V], 0.9, 1.1)
     return V * np.exp(1j*theta), it+1, np.max(np.abs(mismatch)) # Retorna tensões, número de iterações e erro final
 
 def main():

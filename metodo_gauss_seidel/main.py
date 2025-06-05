@@ -53,9 +53,9 @@ def main():
         de = int(impedancias.iloc[i]["DE"])  # Barra de origem
         para = int(impedancias.iloc[i]["PARA"])  # Barra de destino
         print(f"Linha {i+1} (Da Barra {de} para a Barra {para}): P = {resultados['fluxos_ativos'][i]*100:.2f} MW | Q = {resultados['fluxos_reativos'][i]*100:.2f} MVar | Perdas: {resultados['perdas_ativas'][i]*100:.2f} MW, {resultados['perdas_reativas'][i]*100:.2f} MVar")  # Exibe fluxos e perdas nas linhas
-    print("\nPerdas totais de potência:")
-    print(f"Perdas totais de P: {np.sum(resultados['perdas_ativas'])*100:.2f} MW")  # Exibe perdas totais de potência ativa
-    print(f"Perdas totais de Q: {np.sum(resultados['perdas_reativas'])*100:.2f} MVar")  # Exibe perdas totais de potência reativa
+    #print("\nPerdas totais de potência:")
+    #print(f"Perdas totais de P: {np.sum(resultados['perdas_ativas'])*100:.2f} MW")  # Exibe perdas totais de potência ativa
+    #print(f"Perdas totais de Q: {np.sum(resultados['perdas_reativas'])*100:.2f} MVar")  # Exibe perdas totais de potência reativa
 
 if __name__ == "__main__":
     main()  # Executa a função principal se o script for chamado diretamente
