@@ -10,7 +10,6 @@ Método Gauss-Seidel e Método Newton-Raphson**
 
 ## 👥 Autores
 - ```atenilton Santos de Souza Júnior```
-- ```Gustavo Henrique da Horta Leão Pereira```
 
 ## 🚀 Funcionalidades
 - Cálculo de tensões nas barras (PU e ângulo)
